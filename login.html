@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+     <!--bootstrap-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <!--font awesome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+</head>
+<body>
+   <header style="width:100%; height: 300px; background-image: url('https://th.bing.com/th/id/R.82b3a8decd277872907be3e212d020b3?rik=LNyn2wC4SO0asA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2f0%2f0%2f525921.jpg&ehk=ovQ3eomrny5XJ6RlupS0R2kZB80KRoB91yf6H0IbMX8%3d&risl=&pid=ImgRaw&r=0');">
+    <nav class="navbar bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-house fa-2x mx-3 text-light"></i> 
+            <span class="text-light fs-2">Landing Page</span>
+          </a>
+        </div>
+      </nav>
+
+   </header>
+   <div class="container-fluid">
+    <h2 class="mt-5">Welcome to our <span class="text-primary"> Website</span></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, atque minima. Perspiciatis reiciendis molestiae facilis tenetur aut voluptatem, quidem commodi dolorum voluptas labore esse distinctio eligendi? In eligendi saepe minus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum modi numquam, quod tempore commodi nisi vel qui non maiores, sit ex reiciendis, inventore placeat minima maxime enim consequatur facere molestias.</p>
+    <div class="row">
+        <div class="col-md-6 p-4 d-flex justify-content-center align-items-center">
+            <img class="w-75" height="300px" src="https://cdn.dribbble.com/users/4412543/screenshots/11086928/media/c23debeaf4452826b6883c90b771e5a8.gif" alt="no image">
+
+        </div>
+        <div class="col-md-6 p-5">
+            <form class="rounded shadow p-3" style="background-image: linear-gradient(to right , rgba(255, 48, 93, 0.904),rgb(255, 238, 0));">
+                <h3 class="text-center text-primary">Login</h3>
+                <div class="px-5">
+                <input type="text" placeholder="Username" class="form-control mt-3" id="logUser">
+                <input type="text" placeholder="Password" class="form-control mt-3" id="logpswd">
+                <button type="button" class="btn btn-primary my-3 w-25" onclick="obj.login()">Login</button>
+                <span class="ms-3">Are you a new User? Click here to <a href="./register.html">Register</a> </span>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+   </div>
+
+</body>
+<script src="./logic.js"></script>
+</html>

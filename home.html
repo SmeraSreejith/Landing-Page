@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header style="width:100%; height: 300px; background-image: url('https://ak.picdn.net/shutterstock/videos/1054345952/thumb/1.jpg');">
+        <nav class="navbar bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-bars fa-2x mx-3 text-light"></i> 
+                <span class="text-light fs-2">DashBoard</span>
+              </a>
+              <div>
+                <span class="text-light fs-4 me-3" onclick="logout()"><i class="fa-solid fa-power-off"></i>Log Out</span>
+
+              </div>
+            </div>
+          </nav>
+    
+       </header>
+       <div>
+        <h1 class="mt-5 text-center">Welcome <span class="text-danger" id="username"></span></h1>
+        <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur culpa sit voluptate ratione tenetur enim distinctio praesentium ipsam dicta, deserunt error nulla harum doloribus magni natus eaque! Ducimus, eaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore voluptates quidem voluptatibus, deleniti laborum quibusdam dolore sequi ullam cupiditate aperiam? Eius corrupti omnis nobis a rerum earum suscipit iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia qui corrupti ipsum odio, architecto quas voluptatibus. Explicabo libero obcaecati reiciendis sit. Illum cupiditate dolorem pariatur alias deleniti fugit? Omnis, culpa!</p>
+       </div>
+       
+    
+    </body>
+    <script>
+      let user = localStorage.getItem("user")
+      /*console.log(user);*/
+      /*username.innerHTML=user*/
+      if(!user){
+        window.location='login.html'
+      }
+      else{
+        username.innerHTML=user
+      }
+      function logout(){
+        localStorage.removeItem("user")
+        window.location = 'login.html'
+      }
+    </script>
+    </html>
